@@ -17,13 +17,11 @@ body
 nav
 	margin-bottom: 20px
 
-li
-	transition: border 0.3s ease
-
-li img:hover
-	// color: #ffcf2d
-	box-shadow: 0 0 0 2px #FFCF2D
-	border-radius: 4px
+.icon
+	transition: filter .8 ease
+	cursor: pointer
+.icon:hover
+	filter: sepia(1) saturate(4) hue-rotate(10deg) brightness(1.1) contrast(1)
 
 @import './base/variables'
 @import './base/mixins'
