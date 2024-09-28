@@ -1,0 +1,36 @@
+@media (max-width: 991px)
+	.premium-features
+		&__center
+			left: 85% !important
+		&__contents
+			right: 30%
+@media (max-width: 767px)
+	.premium-features
+		position: relative
+		width: auto
+		height: auto
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__center
+			position: static !important
+			top: auto !important
+			left: auto !important
+			transform: none !important
+			height: auto !important
+			margin: 20px auto
+
+		&__contents
+			all: unset
+			&_item
+				position: relative
+				left: 0
+				display: flex
+				align-items: center
+				gap: 2vw
+				height: 50px
+				transform: none
+				margin: 10px 0
+				&-wrapper
+					margin: inherit !important
+					width: auto !important

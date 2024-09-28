@@ -1,0 +1,50 @@
+$primory-color: rgba(149, 100, 170, 1)
+$second-color: rgba(149, 100, 170, 0.1)
+$hover-color: #FFCF2D
+$icon-size: 25px
+
+.premium-features
+	position: relative
+	width: 300px
+	height: 300px
+	border-radius: 50%
+	&__center
+		position: absolute
+		top: 60%
+		left: 115%
+		transform: translate(-50%, -50%)
+		height: 50px
+	&__contents
+		position: absolute
+		top: 50px
+		bottom: 0
+		right: 0
+		&_item
+			position: absolute
+			text-align: center
+			top: 50%
+			left: 40%
+			height: 50px
+			transform: rotate(var(--angle)) translate(180px) rotate(calc(var(--angle) * -1))
+			transform-origin: center
+			&-wrapper
+				margin: 0 auto
+				border-radius: 50%
+				background: $second-color
+				padding: 10px
+				width: 45px
+				transition: .5s
+				position: relative
+				cursor: pointer
+				&--img
+					max-width: $icon-size
+					left: 0
+					top: 0
+					transform: translate(0px, 0px)
+				&:hover
+					background: $hover-color
+			p
+				font-size: $font-size-sm
+				margin: 0
+				color: $primory-color
+				font-weight: bold
