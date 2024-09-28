@@ -5,13 +5,13 @@ import parallax from "./js/parallax.mjs";
 
 // carousel
 
-window.addEventListener("DOMContentLoaded ", () => {
+window.addEventListener("DOMContentLoaded", () => {
+  parallax();
   updateClassBasedOnWidth();
   setTimer();
 });
 
 window.addEventListener("load", () => {
-  parallax();
   carousel();
 });
 
