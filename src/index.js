@@ -6,8 +6,8 @@ import parallax from "./js/parallax.mjs";
 // carousel
 
 window.addEventListener("DOMContentLoaded", () => {
-  parallax();
   updateClassBasedOnWidth();
+  parallax();
   setTimer();
 });
 
