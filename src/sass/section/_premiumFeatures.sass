@@ -5,27 +5,26 @@ $icon-size: 25px
 
 .premium-features
 	position: relative
-	width: 300px
-	height: 300px
 	border-radius: 50%
+	margin: 160px auto
+	display: flex
+	justify-content: center
 	&__center
-		position: absolute
-		top: 60%
-		left: 115%
-		transform: translate(-50%, -50%)
-		height: 50px
+		display: grid
+		place-items: center
+		height: 100%
 	&__contents
 		position: absolute
-		top: 50px
-		bottom: 0
-		right: 0
+		left: 0
+		top: 0
+		display: flex
+		width: 100%
+		justify-content: center
 		&_item
 			position: absolute
 			text-align: center
-			top: 50%
-			left: 40%
-			height: 50px
-			transform: rotate(var(--angle)) translate(180px) rotate(calc(var(--angle) * -1))
+			width: 125px
+			transform: rotate(var(--angle)) translate(139px) rotate(calc(var(--angle) * -1))
 			transform-origin: center
 			&-wrapper
 				margin: 0 auto
